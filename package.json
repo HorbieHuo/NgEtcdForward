@@ -1,0 +1,24 @@
+{
+  "name": "ng-etcd-forward",
+  "version": "1.0.0",
+  "description": "ng etcd forward",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HorbieHuo/NgEtcdForward.git"
+  },
+  "keywords": [
+    "ng",
+    "etcd",
+    "forward"
+  ],
+  "author": "horb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HorbieHuo/NgEtcdForward/issues"
+  },
+  "homepage": "https://github.com/HorbieHuo/NgEtcdForward#readme"
+}
