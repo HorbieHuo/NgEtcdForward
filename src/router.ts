@@ -15,7 +15,10 @@ export class Router {
     public Get(urlStr: string | undefined): BaseHandler {
         let callback: BaseHandler | undefined;
         if (typeof urlStr === "string") {
-            callback = this.routerMap.get(urlStr);
+            let urlObj = url.parse(urlStr);
+            let urlPathname = urlObj.pathname;
+            if (urlPathname)
+                callback = this.routerMap.get(urlPathname);
         } else {
             return this.callback_404;
         }
