@@ -12,4 +12,6 @@ export class EtcdApi extends BaseHandler {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({message: "etcd api get"}));
     }
+
+    protected put(req: IncomingMessage, res: ServerResponse) {}
 }

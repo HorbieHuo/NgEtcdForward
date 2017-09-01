@@ -1,4 +1,5 @@
 import { IncomingMessage, ServerResponse } from "http";
+import { URL } from "url";
 
 export class BaseHandler {
     constructor() {}
@@ -27,6 +28,14 @@ export class BaseHandler {
                 break;
             }
         }
+    }
+
+    protected getUrlInfo(req: IncomingMessage): URL | undefined {
+        if (req.url) {
+            const urlInfo = new URL(req.url);
+            return urlInfo; 
+        }
+        return undefined;
     }
 
     protected defaultHandler(req: IncomingMessage, res: ServerResponse) {

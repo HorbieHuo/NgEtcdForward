@@ -1,4 +1,5 @@
-import url=require("url");
+// import url=require("url");
+import * as url from "url";
 import { BaseHandler } from "./basehandler";
 
 export class Router {

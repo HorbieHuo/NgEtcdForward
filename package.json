@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/HorbieHuo/NgEtcdForward/issues"
   },
-  "homepage": "https://github.com/HorbieHuo/NgEtcdForward#readme"
+  "homepage": "https://github.com/HorbieHuo/NgEtcdForward#readme",
+  "dependencies": {
+    "@types/node": "^8.0.26",
+    "typescript": "^2.5.2"
+  }
 }
